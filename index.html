@@ -5,110 +5,162 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Responsive Vertical Timeline | CodyHouse</title>
+  <link rel="stylesheet" href="assets/css/style.scss">
+
+  <title>Lockdown Timeline</title>
 </head>
 <body>
-	<header class="cd-main-header text-center flex flex-column flex-center">
-    <h1>Responsive Vertical Timeline</h1>
+	<!-- <header class="cd-main-header text-center flex flex-column flex-center">
+    <h1>A Timeline of Lockdowns in England</h1>
     <p class="margin-top-sm"></p>
-  </header>
+  </header> -->
+
+    <header class="cd-main-header text-center flex flex-column flex-center">
+      <h1>A Timeline of Lockdowns<br /> in England</h1>
+      <p class="margin-top-sm"></p>
+    </header>
 
   <section class="cd-timeline js-cd-timeline">
     <div class="container max-width-lg cd-timeline__container">
+      
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+          <img src="assets/img/big-ben-london-svgrepo-com.svg" alt="Picture">
         </div> <!-- cd-timeline__img -->
 
         <div class="cd-timeline__content text-component">
-          <h2>Title of section 1</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+          <h2>But first, the Source Material!</h2>
+          <p class="color-contrast-medium">Timeline content is from The House of Commons library.<br />
+            <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-9068/#:~:text=England%20was%20in%20national%20lockdown,food%20or%20for%20medical%20reasons.">A history of England's coronavirus "lockdown laws"</a></p>
 
           <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
+            <span class="cd-timeline__date"></span>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--movie">
+          <img src="assets/img/handsani.svg" alt="sanitizer">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>First national lockdown </h2>
+          <p class="color-contrast-medium">England was in national lockdown between late March and June 2020. Intitally, all “non-essential” high street businesses were closed and people were ordered to stay at home, permitted to leave for essential purposes only, such as buying food or for medical reasons. Starting in May 2020, the laws were slowly relaxed. People were permitted to leave home for outdoor recreation (beyond exercise) from 13 May. On 1 June, the restriction on leaving home was replaced with a requirement to be home overnight, and people were permitted to meet outside in groups of up to six people.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">March to June 2020</span>
+            <!-- <a href="#0" class="btn btn--subtle">Stories</a> -->
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
       <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/masker.svg" alt="mask">
         </div> <!-- cd-timeline__img -->
 
         <div class="cd-timeline__content text-component">
-          <h2>Title of section 2</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+          <h2>Minimal lockdown restrictions</h2>
+          <p class="color-contrast-medium">Most lockdown restrictions were lifted on 4 July 2020. Most hospitality businesses were permitted to reopen. New health and safety guidance on operating businesses “Covid securely” was published. Gatherings up to thirty people were legally permitted, although the Government was still recommending people avoid gatherings larger than six.</p>
           
           <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 3</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 24</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 4</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 5</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
+            <span class="cd-timeline__date">July to September 2020</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+          <img src="assets/img/tissue_7018204.png" alt="toiletroll">
         </div> <!-- cd-timeline__img -->
 
         <div class="cd-timeline__content text-component">
-          <h2>Final Section</h2>
-          <p class="color-contrast-medium">This is the content of the last section</p>
+          <h2>Reimposing restrictions</h2>
+          <p class="color-contrast-medium">On 14 September, restrictions for gathering in England were tightened and people were once again legally prohibited from meeting more than six people socially. The new “rule of six” applied both indoors and outdoors. Eleven days later, pubs, bars and restaurants were told they had to shut between 10pm and 6am.
+            <br />
+    
+          During this period, a range of local restrictions were imposed across England. On the 14 October, the Government rationalised local restrictions by introducing a “three tier system”. At first, most of the country was placed in the least restrictive tier one, which had similar restrictions to the previous national rules. As time went on, more of the country was placed in the higher two tiers. </p>
 
           <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 26</span>
+            <span class="cd-timeline__date">September to October 2020</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/closed_1234190.png" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Second national lockdown</h2>
+          <p class="color-contrast-medium">On 5 November, national restrictions were reintroduced in England. During the second national lockdown, non-essential high street businesses were closed, and people were prohibited from meeting those not in their “support bubble” inside. People could leave home to meet one person from outside their support bubble outdoors. </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">November 2020</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/rapid-test_5333408.png" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Reintroducing a tiered system</h2>
+          <p class="color-contrast-medium">On 2 December, the tiered system was reintroduced with modifications.
+            <br /> <br /> 
+            Restrictions on hospitality businesses were stricter and most locations were initially placed in tiers two and three. On 19 December, the Prime Minister announced that a fourth tier would be introduced, following concerns about a rising number of coronavirus cases due to a new variant (what was to become known as the Alpha variant, first identified in Kent).
+            <br /> <br /> 
+            The tier four rules were like those imposed during the second national lockdown. On 30 December, after the first review of tiers under the new system, around 75% of the country was placed under tier four restrictions.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">December 2020</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--movie">
+          <img src="assets/img/play.svg" alt="Movie">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Third national lockdown</h2>
+          <p class="color-contrast-medium">Following concerns that the four-tier system was not containing the spread of the Alpha variant, national restrictions were reintroduced for a third time on 6 January.
+            <br /> <br /> 
+            The rules during the third lockdown were more like those in the first lockdown. People were once again told to stay at home. However, people could still form support bubbles (if eligible) and some gatherings were exempted from the gatherings ban (for example, religious services and some small weddings were permitted). </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">January to March 2021</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/open_1234189.png" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Leaving lockdown</h2>
+          <p class="color-contrast-medium">On 8 March 2021, England began a phased exit from lockdown. A four-step plan, known as the roadmap out of lockdown, intended to “cautiously but irreversibly” ease lockdown restrictions. Instead of a return to the tiered system, the Government said it planned to lift restrictions in all areas at the same time, as the level of infection was broadly similar across England.
+            <br /> <br /> 
+            England moved through the roadmap as planned but step four was delayed by four weeks to allow more people to receive their first dose of a coronavirus vaccine.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">March to July 2021</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
     </div>
   </section> <!-- cd-timeline -->
   <script src="assets/js/main.js"></script>

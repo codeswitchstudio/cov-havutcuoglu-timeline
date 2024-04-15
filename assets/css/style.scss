@@ -2,22 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700'); // custom font
 
 // -------------------------------------------------
-
-// Responsive Vertical Timeline - by CodyHouse.co
-
+// Credit goes to: Responsive Vertical Timeline - by CodyHouse.co
 // -------------------------------------------------
 
 :root {
   // colors
   @include defineColorHSL(--cd-color-1, 206, 21%, 24%); // Navy
   @include defineColorHSL(--cd-color-2, 205, 38%, 89%); // Blue
+  // @include defineColorHSL(--cd-color-2, 0, 0%, 90%); // Greige
   @include defineColorHSL(--cd-color-3, 207, 10%, 55%); // Grey
   @include defineColorHSL(--cd-color-4, 111, 51%, 60%); // Green
   @include defineColorHSL(--cd-color-5, 356, 53%, 49%); // Red
   @include defineColorHSL(--cd-color-6, 47, 85%, 61%);  // Yellow
 
   // header
-  --cd-header-height: 200px;
+  --cd-header-height: 300px;
 
   // font
   --font-primary: 'Droid Serif', serif;
@@ -27,21 +26,19 @@
 @supports(--css: variables) {
   :root {
     @include breakpoint(md) {
-      --cd-header-height:  300px;
+      --cd-header-height:  200px;
     }
   }
 }
 
+
 .cd-main-header {
   height: var(--cd-header-height);
-  background: var(--cd-color-3);
-  color: var(--color-black);
+  // background: var(--cd-color-3);
+  // color: var(--color-black);
   @include fontSmooth;
 
-  h1 {
-    font-family: var(--font-secondary);
-    color: inherit;
-  }
+
 }
 
 .cd-timeline {
@@ -51,11 +48,21 @@
   background-color: lightness(var(--cd-color-2), 1.05);
   font-family: var(--font-primary);
 
-  h2 {
+
+h1 {
     font-family: var(--font-secondary);
     font-weight: 700;
   }
 }
+
+  h2 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+  }
+
+
+
+
 
 .cd-timeline__container {
   position: relative;
@@ -108,8 +115,8 @@
   box-shadow: 0 0 0 4px var(--color-white), inset 0 2px 0 rgba(#000, 0.08), 0 3px 0 4px rgba(#000, 0.05);
 
   img {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
   }
 
   @include breakpoint(md) {
